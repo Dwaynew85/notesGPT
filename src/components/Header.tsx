@@ -3,9 +3,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./ui/button";
 import DarkModeToggle from "./ui/darkmodetoggle";
+import LogoutButton from "./LogoutButton";
 
 const Header = () => {
-  const user = null;
+  const user = 1;
 
   return (
     <header className="bg-popover relative flex h-24 w-full items-center justify-between bg-popover px-3 sm:px-8"
@@ -27,7 +28,7 @@ const Header = () => {
 
       <div className="flex gap-4">
         {user ? (
-          "Logout"
+          <LogoutButton />
         ) : (
           <>
             <Button asChild>
