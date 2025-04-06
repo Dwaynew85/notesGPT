@@ -52,7 +52,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
   return (
     <form action={handleSubmit}>
       <CardContent className="grid w-full items-center gap-4">
-        <div className="flex flex-col space-y-1.5">
+        <div className="flex flex-col space-y-1.5 mb-3">
           <Label htmlFor="email">Email</Label>
           <Input
             type="email"
@@ -65,7 +65,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
         </div>
       </CardContent>
       <CardContent>
-        <div className="flex flex-col space-y-1.5">
+        <div className="flex flex-col space-y-1.5 mb-3">
           <Label htmlFor="password">Password</Label>
           <Input
             type="password"
